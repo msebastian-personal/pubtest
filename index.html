@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <h1>THIS IS POINTING TO A TEST ORG.</h1>
+
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DU9000005jqVp',
+				'Web',
+				'https://inclinepc--crmfdevai.sandbox.my.site.com/ESWINCInclineServiceAg1755131112053',
+				{
+					scrt2URL: 'https://inclinepc--crmfdevai.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://inclinepc--crmfdevai.sandbox.my.site.com/ESWINCInclineServiceAg1755131112053/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
